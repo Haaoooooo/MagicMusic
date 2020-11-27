@@ -1,0 +1,143 @@
+header {
+  height: 42rem;
+  line-height: 42rem;
+  width: 100%;
+  margin-top: 64rem;
+  overflow: hidden;
+}
+header img {
+  height: 42rem;
+  margin-left: 32rem;
+}
+header a {
+  font-size: 30rem;
+  color: #666666;
+  margin-right: 32rem;
+  float: right;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 22rem;
+}
+.logo img {
+  width: 250rem;
+  height: 274rem;
+}
+form {
+  margin-top: 92rem;
+}
+.user {
+  text-align: center;
+  position: relative;
+}
+.user span {
+  position: absolute;
+  top: 50%;
+  left: 74rem;
+  transform: translateY(-50%);
+  display: flex;
+  width: 100rem;
+  height: 30rem;
+  line-height: 30rem;
+  font-size: 22rem;
+  color: #9937da;
+  display: none;
+}
+.user input {
+  width: 600rem;
+  text-align: center;
+  padding: 24rem 0rem;
+  border: none;
+  border-bottom: 3rem solid #e8e8e8;
+  font-size: 28rem;
+  color: #999999;
+  outline: none;
+}
+.user .bottom-icon {
+  width: 116rem;
+  height: 22rem;
+  position: absolute;
+  top: 27.5rem;
+  right: 74rem;
+}
+.user .bottom-icon img {
+  width: 116rem;
+  height: 22rem;
+}
+.pwd {
+  text-align: center;
+  margin-top: 43rem;
+  position: relative;
+}
+.pwd span {
+  position: absolute;
+  top: 50%;
+  left: 74rem;
+  transform: translateY(-50%);
+  display: flex;
+  width: 100rem;
+  height: 30rem;
+  line-height: 30rem;
+  font-size: 22rem;
+  color: #9937da;
+  display: none;
+}
+.pwd input {
+  width: 600rem;
+  text-align: center;
+  padding: 24rem 0rem;
+  border: none;
+  border-bottom: 3rem solid #e8e8e8;
+  font-size: 28rem;
+  color: #999999;
+  outline: none;
+}
+.phone {
+  text-align: center;
+  margin-bottom: 43rem;
+  position: relative;
+}
+.phone span {
+  position: absolute;
+  top: 50%;
+  left: 74rem;
+  transform: translateY(-50%);
+  display: flex;
+  width: 100rem;
+  height: 30rem;
+  line-height: 30rem;
+  font-size: 22rem;
+  color: #9937da;
+  display: none;
+}
+.phone input {
+  width: 600rem;
+  text-align: center;
+  padding: 24rem 0rem;
+  border: none;
+  border-bottom: 3rem solid #e8e8e8;
+  font-size: 28rem;
+  color: #999999;
+  outline: none;
+}
+.submit {
+  text-align: center;
+  margin-top: 64rem;
+}
+.submit span {
+  width: 102rem;
+  height: 102rem;
+}
+.submit span img {
+  width: 102rem;
+  height: 102rem;
+}
+footer {
+  text-align: center;
+  margin-top: 246rem;
+}
+footer p {
+  font-size: 22rem;
+  color: #999999;
+}

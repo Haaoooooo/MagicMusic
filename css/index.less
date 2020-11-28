@@ -1,0 +1,201 @@
+header{
+    position: relative;
+    background: url(../index/img/sh.jpg) no-repeat;
+    background-size:100% 100%;
+    padding: 0 70rem 0 70rem;
+    height: 96rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &>span{
+       text-align: center;
+       flex: 1;
+       font-size: 36rem;
+       color: rgb(255, 255, 255); 
+    }
+     &>.dc{
+       padding: 7rem;
+        color: rgb(236, 50, 165);
+        background: url(../index/img/home-8.png) 73rem  55rem no-repeat;
+        background-size: 66rem 4rem;
+    }
+    img{
+        width: 44rem;
+    }
+    &>img:nth-child(1){
+        position: absolute;
+        top: 32rem;
+        left: 32rem;
+    }
+    &>img:nth-child(5){
+        position: absolute;
+        top: 32rem;
+        right: 32rem;
+    }
+}
+// 轮播图
+.demo{
+    img{
+        width: 100%;
+    }
+    .swiper-pagination{
+        height: 40rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            background-color: #ee7bc3;
+            margin-right: 68rem !important;
+           display: block;
+           width: 22rem;
+           height: 22rem;
+        }
+       
+    }
+}
+// 主体
+article{
+    &>ul{
+       padding: 42rem 32rem 32rem 32rem;
+       border-bottom: 1rem solid #f7f7f7;
+        display: flex;
+        li{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          .imgs{
+              img{
+                  width: 100%;
+                  height: 100%;
+              }
+              width: 105rem;
+              height: 105rem;
+              display: flex;
+            align-items: center;
+            justify-content: center;
+              
+          }
+        //   .pk{
+        //     background-color: #ff9aff
+        //   }
+          &>p{
+              padding-top: 4rem;
+              text-align: center;
+              font-size:28rem ;
+          }
+        }
+    }
+// 展示
+.particulars{
+    .new{
+        padding: 42rem 64rem 32rem 32rem;
+        &>span:nth-child(1){
+             font-size: 36rem;
+             color: rgb(51, 51, 51);
+        }
+        &>span:nth-child(2){
+            padding: 10rem 0 20rem 0;
+            float: right;
+            font-size: 24rem;
+            
+        }
+        .une{
+            
+            background: url(../index/img/9@2x.png) 0rem 50rem no-repeat;
+            background-size: 100%;
+            color: #ec32a5;
+        }
+
+        &>span:nth-child(3){
+            padding: 10rem 72rem 20rem 0;
+            float: right;
+            font-size: 24rem;
+        }
+
+    }
+    &>ul{
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            .imgz{
+               
+                img{
+                   width: 240rem;
+                   height: 233rem;  
+                }
+            }
+        .text{
+            padding: 16rem 0 12rem 32rem;
+            width: 208rem;
+            height: 64rem;
+            font-size: 22rem;
+            color: rgb(51, 51, 51);
+        }
+        &>p{
+            padding: 0 0 32rem 32rem;
+            font-size: 18rem;
+            color: rgb(153, 153, 153);
+        } 
+         }
+         .centre{
+          flex: 1;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           &>p{
+            padding: 0 46rem 32rem 0rem;
+            font-size: 18rem;
+            color: rgb(153, 153, 153);
+        } 
+         }
+    }
+
+}
+}
+// 底部
+.play{
+    position: fixed;
+    bottom: 0;
+    height: 98rem;
+    width: 100%;
+    background-image: linear-gradient(to right, #2f88e2 , #e032ad);
+    display: flex;
+    align-items: center;
+}
+.photo{width: 68rem;height: 68rem;margin-left: 32rem;}
+.photo img{
+    width: 68rem;
+    height: 68rem;
+}
+.songname{
+    margin-left: 20rem;
+}
+.songname p:first-child{
+    font-size: 24rem;
+    color: rgb(255,255,255);
+    margin-bottom: 5rem;
+}
+.songname p:last-child{
+    font-size: 24rem;
+    color: rgb(255,255,255);
+}
+.next{
+    overflow: hidden;
+    margin-left: 238rem;
+}
+.next span{
+    float: left;
+    width: 44rem;
+    height: 44rem;
+}
+.next span:first-child{
+    margin-right: 32rem;
+}
+.next span img{
+    width: 44rem;
+    height: 44rem;
+}

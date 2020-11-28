@@ -36,11 +36,7 @@ form {
   top: 50%;
   left: 74rem;
   transform: translateY(-50%);
-  display: flex;
-  width: 100rem;
-  height: 30rem;
-  line-height: 30rem;
-  font-size: 22rem;
+  font-size: 18rem !important;
   color: #9937da;
   display: none;
 }
@@ -75,11 +71,7 @@ form {
   top: 50%;
   left: 74rem;
   transform: translateY(-50%);
-  display: flex;
-  width: 100rem;
-  height: 30rem;
-  line-height: 30rem;
-  font-size: 22rem;
+  font-size: 18rem !important;
   color: #9937da;
   display: none;
 }
@@ -94,10 +86,12 @@ form {
   outline: none;
 }
 .submit {
-  text-align: center;
   margin-top: 64rem;
+  display: flex;
+  justify-content: center;
 }
 .submit span {
+  display: block;
   width: 102rem;
   height: 102rem;
 }
@@ -156,4 +150,20 @@ footer div:first-child {
 }
 footer div:last-child {
   margin-left: 67rem;
+}
+.masked {
+  text-align: center;
+  background-image: -webkit-linear-gradient(left, #2f88e2, #e032ad 25%, #2f88e2 50%, #e032ad 75%, #2f88e2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-background-size: 200% 100%;
+  -webkit-animation: masked-animation 4s infinite linear;
+}
+@-webkit-keyframes masked-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
 }

@@ -8,15 +8,15 @@ header{
     justify-content: center;
     align-items: center;
     &>span{
+       padding:15rem;
        text-align: center;
        flex: 1;
        font-size: 36rem;
        color: rgb(255, 255, 255); 
     }
      &>.dc{
-       padding: 7rem;
         color: rgb(236, 50, 165);
-        background: url(../index/img/home-8.png) 73rem  55rem no-repeat;
+        background: url(../index/img/home-8.png) 67rem  70rem no-repeat;
         background-size: 66rem 4rem;
     }
     img{
@@ -65,7 +65,7 @@ article{
             align-items: center;
             justify-content: center;
             flex-direction: column;
-          .imgs{
+          .imga{
               img{
                   width: 100%;
                   height: 100%;
@@ -77,9 +77,6 @@ article{
             justify-content: center;
               
           }
-        //   .pk{
-        //     background-color: #ff9aff
-        //   }
           &>p{
               padding-top: 4rem;
               text-align: center;
@@ -102,9 +99,8 @@ article{
             
         }
         .une{
-            
             background: url(../index/img/9@2x.png) 0rem 50rem no-repeat;
-            background-size: 100%;
+            background-size: 47rem;
             color: #ec32a5;
         }
 
@@ -116,12 +112,13 @@ article{
 
     }
     &>ul{
+     
         overflow: hidden;
         display: flex;
         flex-wrap: wrap;
-        li{
+        li{ 
+            width: 240rem;
             .imgz{
-               
                 img{
                    width: 240rem;
                    height: 233rem;  
@@ -135,22 +132,18 @@ article{
             color: rgb(51, 51, 51);
         }
         &>p{
+            width: 208rem;
             padding: 0 0 32rem 32rem;
             font-size: 18rem;
             color: rgb(153, 153, 153);
         } 
          }
-         .centre{
-          flex: 1;
+         &>li:nth-child(3n-1){
+           flex: 1;
            display: flex;
            flex-direction: column;
            align-items: center;
            justify-content: center;
-           &>p{
-            padding: 0 46rem 32rem 0rem;
-            font-size: 18rem;
-            color: rgb(153, 153, 153);
-        } 
          }
     }
 

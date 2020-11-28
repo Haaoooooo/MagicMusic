@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="./css/yinyue.css">
 </head>
 <body>
 <!-- 头部 -->
@@ -35,102 +36,136 @@
 </div>
 <!-- 正文 -->
 <article>
-    <ul>
+<ul>
         <li>
-            <div class="imgs pk"><img src="./index/img/4@2x.png" alt=""></div>
+            <div class="imga pk"><img src="./index/img/4@2x.png" alt=""></div>
             <p>歌手</p>
         </li>
         <li>
-            <div class="imgs pk"><img src="./index/img/5@2x.png" alt=""></div>
+            <div class="imga pk"><img src="./index/img/5@2x.png" alt=""></div>
             <p>专辑</p>
         </li>
         <li>
-            <div class="imgs"><img src="./index/img/6@2x.png" alt=""></div>
+            <div class="imga"><img src="./index/img/6@2x.png" alt=""></div>
             <p>排行</p>
         </li>
         <li>
-            <div class="imgs"><img src="./index/img/7@2x.png" alt=""></div>
+            <div class="imga"><img src="./index/img/7@2x.png" alt=""></div>
             <p>电台</p>
         </li>
         <li>
-            <div class="imgs"><img src="./index/img/8@2x.png" alt=""></div>
+            <div class="imga"><img src="./index/img/8@2x.png" alt=""></div>
             <p>歌单</p>
         </li>
-    </ul>
+</ul>
     <div class="particulars">
      <div class="new">
          <span>精选歌单</span>
          <span class="une">推荐</span>
          <span>最新</span>
      </div>
-      <ul>
-         <li>
-             <div class="imgz"><img src="./index/img/10@2x.png" alt=""></div>
-             <div class="text">
-               轻车上路，一路飙向爱的乌托邦
-             </div>
-             <p>安安静静做自己</p>
-         </li> 
-         <li class="centre">
-            <div class="imgz"><img src="./index/img/11@2x.png" alt=""></div>
-            <div class="text">
-              无畏改变 生是见识
-            </div>
-            <p>安安静静做自己</p>
-        </li> 
-        <li>
-            <div class="imgz"><img src="./index/img/12@2x.png" alt=""></div>
-            <div class="text">
-              劲爽热舞&nbsp;&nbsp;给自己的耳朵充电
-            </div>
-            <p>安安静静做自己</p>
-        </li> 
-        <li>
-            <div class="imgz"><img src="./index/img/10@2x.png" alt=""></div>
-            <div class="text">
-              轻车上路，一路飙向爱的乌托邦
-            </div>
-            <p>安安静静做自己</p>
-        </li> 
-        <li class="centre">
-           <div class="imgz"><img src="./index/img/11@2x.png" alt=""></div>
-           <div class="text">
-             无畏改变 生是见识
-           </div>
-           <p>安安静静做自己</p>
-       </li> 
-       <li>
-           <div class="imgz"><img src="./index/img/12@2x.png" alt=""></div>
-           <div class="text">
-             劲爽热舞&nbsp;&nbsp;给自己的耳朵充电
-           </div>
-           <p>安安静静做自己</p>
-       </li> 
-         
+      <ul class="list">
       </ul>
     </div>
 </article>
 <!-- 播放器 -->
 <footer class="play">
-        <div class="photo"><img src="./index/img/50@2x.png" ></div>
-        <div class="songname">
-            <p>Where IS Your Love</p>
-            <p>横滑可以切换上下首哦</p>
+  <div class="box">
+    <audio id="video">
+        <source src="./index/img/赵方婧 - 尽头.mp3"/>
+    </audio>
+    <div class="jp-gui">
+        <div class="jp-interface">
+            <div class="jp-controls-holder">
+                <a href="javascript:;" class="jp-play" tabindex="1" style="display: block;" ></a>
+                <a href="javascript:;" class="jp-pause" tabindex="1" style="display: none;"></a>
+            </div>
+            <div class="jp-progress">
+                <div class="jp-seek-bar" style="width: 100%;">
+                    <div class="jp-play-bar" style="width: 0%;"><span></span></div>
+                </div>
+            </div>
+
+            <div class="jp-current-time" style="padding: 0 2px 0 5px;">00:00</div>
+            <span class="time-sep">/</span>
+
+            <div class="jp-duration" style="padding: 0 5px 0 2px;">01:11</div>
+    
+            <div class="jp-volume-bar">  
+                <div class="jp-volume-bar-value" style="width: 100%;"><span class="handle"></span></div>
+             <div class="jp-unmute"></div>
+            </div> 
         </div>
-        <div class="next">
-            <span>
-                <img src="./index/img/home-4.png" alt="">
-                <img src="./index/img/home-5.png" alt="" hidden>
-            </span>
-            <span><img src="./index/img/home-6.png" alt="">
-            </span>
-        </div>
+     <div class="imgx"><img src="./index/img/50@2x.png" alt=""></div>
+     <div class="imgs"><img src="./index/img/home-6.png" alt=""></div>
+    </div> 
+    <div class="text">
+       <p>Where IS Your Love</p>
+       <p>横滑可以切换上下首哦</p>
+    </div>
+
+</div>
 </footer>
 </body>
+<script src="./js/doT.min.js"></script>
 <script src="./js/jquery-3.5.1.min.js"></script>
 <script src="./js/public.js"></script>
 <script src="./swiper/swiper-bundle.min.js"></script>
+<script src="./js/zepto.js"></script>
+<script src="./js/yinyue.js"></script>
+<!-- 渲染 -->
+<script id="list_template" type="text/x-dot-template">
+  {{~ it:value:index}}
+  <li>
+    <div class="imgz"><img src="{{=value.imgurl}}" alt=""></div>
+    <div class="text">
+      {{=value.info}}
+    </div>
+    <p> {{=value.title}}</p>
+</li>  
+{{~ }}   
+</script>
 <script>
+function newest(){
+$.ajax({
+   url:"http://192.168.1.94:3000/home?type=new",
+   type:'get',
+   success:function(ren){
+    console.log(ren)
+    var dot_tem = doT.template(document.getElementById('list_template').innerText);
+    $('.list').html(dot_tem(ren.musicList))
+   }
+ })  
+}
+function recommend(){
+$.ajax({
+   url:"http://192.168.1.94:3000/home?type=recommend",
+   type:'get',
+   success:function(ren){
+    console.log(ren)
+    var dot_tem = doT.template(document.getElementById('list_template').innerText);
+    $('.list').html(dot_tem(ren.musicList))
+   }
+})  
+}
+recommend() ;
+//头部 --我的
+$('header span').on('tap',function(){
+  $('header span').removeClass('dc');
+  $(this).addClass('dc')
+});
+// 最新推荐
+$('.new span').on('tap',function(){
+  $('.new span').removeClass('une');
+  $(this).addClass('une');
+})
+$('.new span').eq(1).on('tap',function(){
+  recommend() 
+})
+$('.new span').eq(2).on('tap',function(){
+  newest();
+})
+// 轮播图
   new Swiper('.demo', {
     autoplay: {
       delay: 1000
@@ -138,7 +173,8 @@
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
-    }
+    },
+    loop:true
   });
 </script>
 </html>

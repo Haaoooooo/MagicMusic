@@ -71,40 +71,42 @@
 <!-- 播放器 -->
 <footer class="play">
   <div class="box">
-    <audio id="video">
-        <source src="./index/img/赵方婧 - 尽头.mp3"/>
-    </audio>
+      <audio class="audio">
+     <source src="./index/img/要不要买菜 - 星月神话.mp3"/>  
+      要不要买菜- 星月神话  
+      </audio>
+      <audio>
+       <source src="./index/img/赵方婧 - 尽头.mp3"/>  
+       赵方婧 - 尽头
+      </audio>
+ 
     <div class="jp-gui">
         <div class="jp-interface">
             <div class="jp-controls-holder">
                 <a href="javascript:;" class="jp-play" tabindex="1" style="display: block;" ></a>
                 <a href="javascript:;" class="jp-pause" tabindex="1" style="display: none;"></a>
             </div>
-            <div class="jp-progress">
-                <div class="jp-seek-bar" style="width: 100%;">
-                    <div class="jp-play-bar" style="width: 0%;"><span></span></div>
-                </div>
-            </div>
-
-            <div class="jp-current-time" style="padding: 0 2px 0 5px;">00:00</div>
+            <!-- <div class="jp-current-time" style="padding: 0 2px 0 5px;">00:00</div>
             <span class="time-sep">/</span>
-
-            <div class="jp-duration" style="padding: 0 5px 0 2px;">01:11</div>
-    
-            <div class="jp-volume-bar">  
-                <div class="jp-volume-bar-value" style="width: 100%;"><span class="handle"></span></div>
-             <div class="jp-unmute"></div>
-            </div> 
+            <div class="jp-duration" style="padding: 0 5px 0 2px;">01:11</div> -->
         </div>
      <div class="imgx"><img src="./index/img/50@2x.png" alt=""></div>
      <div class="imgs"><img src="./index/img/home-6.png" alt=""></div>
     </div> 
     <div class="text">
        <p>Where IS Your Love</p>
-       <p>横滑可以切换上下首哦</p>
+       <p class="hua">横滑可以切换上下首哦</p>
     </div>
-
+    <div class="sol" hidden>
+       <ul>
+         <li>星月神话<span>X</span></li>
+         <li>尽头<span>X</span></li>
+       </ul>
+    </div>
 </div>
+<style>
+
+</style>
 </footer>
 </body>
 <script src="./js/doT.min.js"></script>
@@ -131,18 +133,18 @@ $.ajax({
    url:"http://192.168.1.94:3000/home?type=new",
    type:'get',
    success:function(ren){
-    console.log(ren)
     var dot_tem = doT.template(document.getElementById('list_template').innerText);
     $('.list').html(dot_tem(ren.musicList))
    }
  })  
 }
+
 function recommend(){
 $.ajax({
    url:"http://192.168.1.94:3000/home?type=recommend",
    type:'get',
    success:function(ren){
-    console.log(ren)
+    // console.log(ren)
     var dot_tem = doT.template(document.getElementById('list_template').innerText);
     $('.list').html(dot_tem(ren.musicList))
    }
@@ -162,9 +164,35 @@ $('.new span').on('tap',function(){
 $('.new span').eq(1).on('tap',function(){
   recommend() 
 })
+
 $('.new span').eq(2).on('tap',function(){
   newest();
 })
+// 播放动画
+var num=0;
+var timer=null;
+var image=$('.imgx')[0];
+var deg=0;
+$('.jp-controls-holder').on('touchstart',function(){
+num++;
+
+if(num%2==1){
+$('.text p').eq('0').addClass('rl')
+go();
+}else{
+ clearInterval(timer) 
+ $('.text p').eq('0').removeClass('rl')
+}
+})
+function go(){
+timer=setInterval(function(){
+image.style.transform="rotate("+deg+"deg)";
+deg+=5;
+if(deg>360){
+  deg=0;
+}
+},30);  
+}
 // 轮播图
   new Swiper('.demo', {
     autoplay: {
@@ -175,6 +203,6 @@ $('.new span').eq(2).on('tap',function(){
       type: 'bullets',
     },
     loop:true
-  });
+  })
 </script>
 </html>

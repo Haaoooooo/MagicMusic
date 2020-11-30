@@ -7,7 +7,7 @@ body{
     height: 100%;
 }
 .box{
-    overflow: hidden;
+
     width: 100%;
     height: 100rem;
     position: relative;
@@ -26,7 +26,7 @@ body{
     width: 44rem;
     height: 44rem;
     position: absolute;
-    top: 30rem;
+    top: 31rem;
     left: 612rem;
 }
 .jp-play{
@@ -65,7 +65,7 @@ body{
     color: #fff;
     position: absolute;
     top: 34rem;
-    left: 510rem;
+    left: 505rem;
 }
 .jp-duration{
     font-size: 15rem;
@@ -96,7 +96,9 @@ body{
 }
 .imgs>img{
     width: 44rem;
+    
 }
+
 .imgx{
     width: 68rem;
     height: 68rem;
@@ -105,19 +107,65 @@ body{
     left: 20rem;
 }
 .imgx>img{
+    
     width: 68rem;
     height: 68rem;
+    
 }
+
 .box>.text{
+    overflow: hidden;
+    width: 280rem;
     color: rgb(255,255,255);
     position: absolute;
     top: 15rem;
     left: 109rem;     
 }
-.box>.text>p:nth-child(1){
+.box>.te.xt>p:nth-child(1){
+    height: 31rem;
     font-size: 24rem;
     margin-bottom: 9rem;
 }
 .box>.text>p:nth-child(2){
     font-size: 20rem;
 }
+.sol{
+width:90%;
+height: 500rem;
+background-image: linear-gradient(to right, #2f88e2, #e032ad );
+position: absolute;
+top: -510rem;
+right: 5%;
+border-radius: 20rem;
+}
+.sol>ul>li:nth-child(1){
+   margin-top: 40rem;
+}
+.sol>ul>li{
+    padding-left: 32rem;
+    font-size: 30rem;
+    height: 80rem;
+    line-height: 80rem;
+}
+.sol>ul>li>span{
+    color:#ccc;
+    margin-right: 32rem;
+    display: block;
+    float: right;
+}
+.rgb{
+    background-color: rgb(255,255,255,.3);
+}
+.rl{
+    height: 31rem;
+    overflow: hidden;
+    animation: open 5s linear infinite;
+  }
+  @keyframes open {
+      0% {
+      padding-left: 0;
+       }
+    100% {
+      padding-left:150rem;
+    }
+  }
